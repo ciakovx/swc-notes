@@ -1,5 +1,0 @@
-library(RSQLite)
-connection <- dbConnect(SQLite(), "survey.db")
-results <- dbGetQuery(connection, "SELECT Site.lat, Site.long FROM Site;")
-print(results)
-dbDisconnect(connection)
